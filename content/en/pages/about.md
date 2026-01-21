@@ -16,4 +16,4 @@ On this blog, you'll find:
 
 I believe in sharing knowledge to empower developers and architects to build smarter solutions. My goal is to make complex AI and cloud concepts accessible and actionable.
 
-Follow me on X (formerly Twitter) or Medium for updates, and let's shape the future of AI together.
+Follow me on my social networks for updates, and let's shape the future of AI together.

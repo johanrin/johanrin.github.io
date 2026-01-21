@@ -31,4 +31,4 @@ My goal is simple: help you design solutions that drive innovation and growth in
 
 ## Let's Connect
 
-Follow me on X (formerly Twitter) and Medium for updates, and join me on this journey to shape the future of AI and cloud.
+Follow me on my social networks for updates, and join me on this journey to shape the future of AI and cloud.

@@ -123,12 +123,12 @@ name = "github"
 url = "https://github.com/johanrin"
 
 [[params.socialIcons]]
-name = "medium"
-url = "https://johanrin.medium.com/"
-
-[[params.socialIcons]]
 name = "x"
 url = "https://x.com/johanrin"
+
+[[params.socialIcons]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/johanrin/"
 
 [[params.socialIcons]]
 name = "Rss"

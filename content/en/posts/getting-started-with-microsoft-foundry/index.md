@@ -128,4 +128,4 @@ This was just an overview of the service, and I'm planning to go deeper into the
 
 That's it for me, hope you learned something!
 
-If you have any questions, feel free to reach out on X (formerly Twitter) or Medium!
+If you have any questions, feel free to reach out on my social networks!
