@@ -1,6 +1,7 @@
 ---
 title: Call Your AWS Step Functions With API Gateway in Just a Few Lines With SAM
 date: 2021-05-03
+cover: post-cover.png
 description: Learn how to integrate AWS Step Functions with API Gateway using SAM. Deploy serverless workflows easily with minimal YAML configuration.
 ---
 

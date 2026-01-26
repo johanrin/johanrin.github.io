@@ -1,6 +1,7 @@
 ---
 title: "Getting Started with Microsoft Foundry"
 date: 2026-01-18
+cover: post-cover.png
 description: "Learn what Microsoft Foundry is and how to deploy your first AI agent step‑by‑step. A beginner‑friendly guide to models, tools, and the agent lifecycle on Azure."
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: What Exactly is Azure Resource Group?
 date: 2020-06-26
+cover: post-cover.png
 description: Learn what Azure Resource Groups are, why they matter, and how to create one. Includes a step-by-step guide to deploy your first VM using Azure CLI.
 ---
 

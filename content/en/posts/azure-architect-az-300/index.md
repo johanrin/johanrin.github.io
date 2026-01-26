@@ -1,6 +1,7 @@
 ---
 title: How I Passed the AZ-300 Microsoft Azure Architect Technologies Exam
 date: 2020-10-05
+cover: post-cover.png
 description: Learn how to pass the AZ-300 Microsoft Azure Architect Technologies exam. Get expert tips, study resources, and a proven strategy for Azure certification success.
 ---
 

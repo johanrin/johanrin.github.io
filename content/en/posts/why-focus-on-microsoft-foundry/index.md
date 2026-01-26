@@ -1,6 +1,7 @@
 ---
 title: Why I'm Focusing on Microsoft Foundry in 2026
 date: 2026-01-05
+cover: post-cover.png
 description: Discover why Microsoft Foundry is my priority in 2026. Learn how AI-driven innovation and cloud-native frameworks are shaping the future.
 toc: false
 ---

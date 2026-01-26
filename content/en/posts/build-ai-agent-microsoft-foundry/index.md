@@ -1,6 +1,7 @@
 ---
 title: "How to Build Your First AI Agent in Microsoft Foundry"
 date: 2026-01-25
+cover: post-cover.png
 description: "Learn how to build, configure, and publish your first AI agent using Microsoft Foundry."
 ---
 

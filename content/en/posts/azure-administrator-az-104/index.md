@@ -1,6 +1,7 @@
 ---
 title: How I Passed the AZ-104 Microsoft Azure Administrator Exam
 date: 2021-01-16
+cover: post-cover.png
 description: Learn how to pass the AZ-104 Microsoft Azure Administrator exam. Get tips, resources, and a proven study plan for success with CloudSkills and Whizlabs.
 ---
 

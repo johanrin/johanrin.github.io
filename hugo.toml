@@ -80,6 +80,7 @@ theme = "hugo-blog-awesome"
   # the default value is set to 'auto'.
   # You can take a look at layouts/index.html for more information.
   description = "Architecting the future with AI & Cloud | Microsoft Foundry | Strategic insights from multiple cloud journeys"
+  images = ['cover.png']
   mainSections = ['posts']
   toc = true # set to false to disable table of contents 'globally'
   tocOpen = false # set to true to open table of contents by default
