@@ -1,8 +1,10 @@
 ---
 title: Call Your AWS Step Functions With API Gateway in Just a Few Lines With SAM
 date: 2021-05-03
-cover: post-cover.png
-description: Learn how to integrate AWS Step Functions with API Gateway using SAM. Deploy serverless workflows easily with minimal YAML configuration.
+image: post-cover.png
+description: Learn how to integrate AWS Step Functions with API Gateway using SAM in just a few lines. Quick guide to deploy serverless workflows with minimal code.
+categories: ["Tutorials", "AWS"]
+tags: ["AWS", "Step Functions", "API Gateway", "SAM", "Serverless"]
 ---
 
 Last weekend I played with AWS Step Functions! I wanted to refactor a Lambda function I already coded for the sake of maintainability and evolutivity.
@@ -19,7 +21,7 @@ Let's start!
 
 In this post, we will deploy a basic Step Functions workflow behind an API Gateway that a simple POST request as below will trigger:
 
-![Architecture Overview](images/architecture-overview.png)
+![AWS Step Functions workflow architecture with API Gateway integration using SAM](images/architecture-overview.png)
 
 And because we use AWS SAM, it will only take us a few lines of YAML. Nothing more!
 
@@ -207,11 +209,11 @@ Our work is now deployed on AWS and ready to be triggered!
 
 For instance, with Postman:
 
-![Postman](images/postman.jpg)
+![Testing AWS Step Functions API endpoint with Postman HTTP client](images/postman.jpg)
 
 And the associated result in AWS:
 
-![Workflow triggered](images/workflow-triggered.jpg)
+![AWS Step Functions workflow successfully triggered via API Gateway](images/workflow-triggered.jpg)
 
 ## Conclusion
 

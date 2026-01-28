@@ -1,8 +1,10 @@
 ---
 title: How to Deploy Your React App in Azure Storage and Static Web Apps
 date: 2021-01-24
-cover: post-cover.png
+image: post-cover.png
 description: Deploy your React app on Azure easily! Learn manual hosting with Azure Storage and automated CI/CD using Azure Static Web Apps and GitHub Actions.
+categories: ["Tutorials", "Azure"]
+tags: ["Azure", "React", "Static Web Apps", "Azure Storage", "Deployment"]
 ---
 
 Imagine you just finished your dream app in React and search for a way to host it somewhere on the Internet.
@@ -50,15 +52,15 @@ I suggest using Azure Storage Explorer to conveniently upload your files and avo
 
 To do so, expand your storage account previously created in Azure Storage Explorer until you find your **$web** blob container and upload your files and directories:
 
-![Upload your app with Azure Storage Explorer](images/upload-your-app-with-azure-storage-explorer.jpg)
+![Uploading React app files to Azure Storage $web container using Storage Explorer](images/upload-your-app-with-azure-storage-explorer.jpg)
 
 When you're done, go directly to Azure to find your website URL:
 
-![Find your website URL](images/find-your-website-url.jpg)
+![Finding static website URL in Azure Storage account properties](images/find-your-website-url.jpg)
 
 And confirm if your website is working or not:
 
-![Your app deployed](images/your-app-deployed.jpg)
+![React app successfully deployed and running on Azure Storage](images/your-app-deployed.jpg)
 
 Great, you deployed your app in Azure Storage! But as you can see, the process is manual and not very efficient…
 
@@ -84,7 +86,7 @@ Here, we created a service principal named _johanrin_ and assigned a Contributor
 
 The command will create a new entry in your Azure Active Directory:
 
-![New entry in Azure Active Directory](images/new-entry-in-azure-active-directory.jpg)
+![Azure service principal created in Azure Active Directory for GitHub Actions](images/new-entry-in-azure-active-directory.jpg)
 
 And it will return you something like that:
 
@@ -109,11 +111,11 @@ Be sure to save the output somewhere — but neither in your code nor in GitHub 
 
 The next step is to add your secret to GitHub. To do so, go to **Settings** > **Secrets** > **New repository secret**, complete the fields, and click on **Add secret**:
 
-![Add your secret in GitHub](images/add-your-secret-in-github.jpg)
+![Adding Azure credentials secret to GitHub repository for CI/CD deployment](images/add-your-secret-in-github.jpg)
 
 This way, you can now create a new workflow in **Actions** > **New workflow** > **set up a workflow yourself** that will use the credentials to upload your files in Azure:
 
-![Create a new workflow](images/create-a-new-workflow.jpg)
+![Creating GitHub Actions workflow for automated Azure deployment](images/create-a-new-workflow.jpg)
 
 The code used in `main.yml` is below. Don't forget to edit your **STORAGE_ACCOUNT** environment variable:
 
@@ -162,7 +164,7 @@ Here, the code will build your app and upload it to your storage account with th
 
 Don't forget to commit your `main.yml` to trigger the workflow! You can confirm if it worked or not on the **Action** page:
 
-![One result in the Action page](images/one-result-in-the-action-page.jpg)
+![GitHub Actions workflow successfully deploying React app to Azure Storage](images/one-result-in-the-action-page.jpg)
 
 With this workflow in place, every time you push your changes, it will trigger your app's build and deployment! Neat!
 
@@ -178,51 +180,51 @@ Some prerequisite before starting:
 
 - Azure Static Web Apps extension is installed on Visual Studio Code
 
-![Azure Static Web Apps extension](images/azure-static-web-apps-extension.jpg)
+![Azure Static Web Apps extension for Visual Studio Code](images/azure-static-web-apps-extension.jpg)
 
 I used a new app in this section but with the same code as before. I did this operation to avoid any conflict with what we did previously. Indeed, we'll create a new GitHub repository with another workflow… So better start from scratch!
 
 Now, in the Azure tab of your Visual Studio Code, click on the **+** to create a new Static Web App and select your subscription:
 
-![Create a new Static Web App](images/create-a-new-static-web-app.jpg)
+![Creating new Azure Static Web App from Visual Studio Code](images/create-a-new-static-web-app.jpg)
 
 Then, click on **Publish local code to a new GitHub repository**:
 
-![Publish local code to a new GitHub repository](images/publish-local-code-to-a-new-github-repository.jpg)
+![Publishing React app to new GitHub repository for Azure Static Web Apps](images/publish-local-code-to-a-new-github-repository.jpg)
 
 Define the name of your new GitHub repository and press Enter:
 
-![Define the name of your new GitHub repository](images/define-the-name-of-your-new-github-repository.jpg)
+![Naming new GitHub repository for Azure Static Web Apps deployment](images/define-the-name-of-your-new-github-repository.jpg)
 
 Then, select if you want a public or private GitHub repository:
 
-![Select public or private GitHub repository](images/select-public-or-private-github-repository.jpg)
+![Choosing public or private visibility for GitHub repository in Azure deployment](images/select-public-or-private-github-repository.jpg)
 
 Define now the name of your Static Web App:
 
-![Define the name of your Static Web App](images/define-the-name-of-your-static-web-app.jpg)
+![Setting Azure Static Web App name during deployment setup](images/define-the-name-of-your-static-web-app.jpg)
 
 Select **React** as build preset:
 
-![Select React as build preset](images/select-react-as-build-preset.jpg)
+![Selecting React build preset for Azure Static Web Apps configuration](images/select-react-as-build-preset.jpg)
 
 Then select the location of your Static Web App:
 
-![Select the location of your Static Web App](images/select-the-location-of-your-static-web-app.jpg)
+![Choosing Azure region location for Static Web Apps deployment](images/select-the-location-of-your-static-web-app.jpg)
 
 It will trigger the creation of your new GitHub repository and the configuration of your workflow!
 
-![Your new GitHub repository](images/your-new-github-repository.jpg)
+![New GitHub repository created with Azure Static Web Apps workflow configured](images/your-new-github-repository.jpg)
 
 Oh, and your app is already deployed!
 
 To find your website URL, go to Azure:
 
-![Find your website URL in Azure](images/find-your-website-url-in-azure.jpg)
+![Finding website URL in Azure Static Web Apps resource overview](images/find-your-website-url-in-azure.jpg)
 
 And admire the result!
 
-![Your app deployed with Static Web App](images/your-app-deployed-with-static-web-app.jpg)
+![React app successfully deployed using Azure Static Web Apps with CI/CD](images/your-app-deployed-with-static-web-app.jpg)
 
 ## Conclusion
 

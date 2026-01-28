@@ -1,8 +1,10 @@
 ---
 title: "How to Build Your First AI Agent in Microsoft Foundry"
 date: 2026-01-25
-cover: post-cover.png
-description: "Learn how to build, configure, and publish your first AI agent using Microsoft Foundry."
+image: post-cover.png
+description: "Learn how to build, configure, and publish your first AI agent using Microsoft Foundry. Hands-on tutorial with step-by-step instructions."
+categories: ["Tutorials", "AI"]
+tags: ["AI", "Microsoft Foundry", "Azure", "AI Agents", "Tutorial"]
 ---
 
 Last time, we explored [what Microsoft Foundry is](https://johanrin.com/posts/getting-started-with-microsoft-foundry/) and why it matters.
@@ -19,7 +21,7 @@ The term appears everywhere in the AI community, yet it can feel abstract withou
 
 **Think of an agent like a chef in a kitchen.**
 
-![Happy Chef](images/happy-chef.jpg)
+![Chef preparing ingredients in kitchen - AI agent analogy for Microsoft Foundry](images/happy-chef.jpg)
 
 A chef looks at the available ingredients, understands what dish needs to be prepared, chooses the right steps, then uses the tools in the kitchen to get the job done.
 
@@ -33,7 +35,7 @@ In practical terms, an AI agent:
 - **Thinks**, by using an LLM as its brain to decide the next step
 - **Acts**, by performing tasks using the tools available to it
 
-![What is an Agent](images/what-is-an-agent.png)
+![AI agent workflow diagram showing observe, think, and act phases in Microsoft Foundry](images/what-is-an-agent.png)
 
 Now that this is clearer, let's build our first agent.
 
@@ -43,15 +45,15 @@ To get started, open the Microsoft Foundry home page: https://ai.azure.com/.
 
 On the home page, select **Start building**, then choose **Create agent**.
 
-![Start Building](images/homepage-start-building.png)
+![Microsoft Foundry homepage with Start Building button to create AI agents](images/homepage-start-building.png)
 
 Give your agent a name and click **Create**.
 
-![Create an Agent](images/homepage-create-agent.png)
+![Create new AI agent dialog in Microsoft Foundry Azure platform](images/homepage-create-agent.png)
 
 You now have a basic agent ready to customize.
 
-![Agent Playground](images/agents-playground.png)
+![Microsoft Foundry agent playground interface showing configuration sections](images/agents-playground.png)
 
 Several key sections define its behavior.
 
@@ -61,7 +63,7 @@ Here you can choose or adjust the model used by your agent. In my case, it is **
 
 You can also tune parameters like _Temperature_ or _Top P_ depending on whether you want a more creative or more deterministic agent.
 
-![Model Parameters](images/agents-playground-model-parameters.png)
+![AI agent model parameters including Temperature and Top P settings in Microsoft Foundry](images/agents-playground-model-parameters.png)
 
 ### Instructions
 
@@ -69,25 +71,25 @@ This is where you write the core prompt that guides your agent.
 
 In my example, I simply used: **You are a helpful writing assistant.**
 
-![Instructions](images/agents-playground-instructions.png)
+![Agent instructions section for configuring AI agent behavior in Microsoft Foundry](images/agents-playground-instructions.png)
 
 ### Tools
 
 Tools allow your agent to extend its capabilities.
 
-![Tools](images/agents-playground-tools.png)
+![Microsoft Foundry agent tools section for extending AI capabilities](images/agents-playground-tools.png)
 
 To add one, click **Add**, then select the one you need.
 
 In my case, I added the **Web search** tool so my agent can look up information online.
 
-![Add Tools](images/agents-playground-tools-add-1.png)
+![Add tools dialog in Microsoft Foundry agent playground interface](images/agents-playground-tools-add-1.png)
 
 Note: this tool may generate additional costs.
 
 Click **Add** to continue.
 
-![Add Web Search Tool](images/agents-playground-tools-add-2.png)
+![Web search tool configuration for AI agent in Microsoft Foundry](images/agents-playground-tools-add-2.png)
 
 After adding it, the agent becomes capable of answering more complex queries.
 
@@ -95,7 +97,7 @@ For instance, I asked it to generate a complete weather report for Paris.
 
 Do not forget to click **Save** to apply your changes.
 
-![Ask Weather Report in Chat](images/agents-chat-weather-report.png)
+![AI agent generating weather report using web search tool in Microsoft Foundry](images/agents-chat-weather-report.png)
 
 ### Knowledge
 
@@ -103,7 +105,7 @@ In this section, you can connect your agent to knowledge bases for grounding.
 
 In other words, it allows your agent to access your existing information sources, such as SharePoint or Azure AI search.
 
-![Knowledge](images/agents-playground-knowledge.png)
+![Knowledge base integration section for AI agents in Microsoft Foundry](images/agents-playground-knowledge.png)
 
 ### Memory
 
@@ -121,11 +123,11 @@ Microsoft enables a standard configuration by default that you can customize.
 
 Once your agent is configured, you can test it directly in Microsoft Foundry.
 
-![Preview Agent](images/agents-preview.png)
+![Preview and test AI agent interface in Microsoft Foundry](images/agents-preview.png)
 
 The preview area lets you interact with the agent and understand how it will behave when deployed.
 
-![Ask Weather Report in Preview Agent](images/agents-preview-weather-report.png)
+![Testing AI agent with weather report query in Microsoft Foundry preview mode](images/agents-preview-weather-report.png)
 
 ## Interact programmatically with your agent
 
@@ -133,7 +135,7 @@ Microsoft Foundry also provides ready‑to‑use code that allows you to interac
 
 The Microsoft Foundry SDK is available in Python, JavaScript, and C#.
 
-![Agent Code](images/agents-code.png)
+![Microsoft Foundry SDK code for programmatic AI agent interaction](images/agents-code.png)
 
 This is very useful if you plan to integrate your agent into an application or add custom logic.
 
@@ -263,29 +265,29 @@ For real-time updates, visit [Météo Paris](https://www.meteo-paris.com/) or [A
 
 Once you are satisfied with your agent, you can publish it directly from the Microsoft Foundry interface.
 
-![Publish your Agent](images/agents-publish-1.png)
+![Publish AI agent button in Microsoft Foundry interface](images/agents-publish-1.png)
 
 Click **Publish agent**, confirm in the popup, and the agent is ready for use.
 
-![Confirm Publishing your Agent](images/agents-publish-2.png)
+![Confirm publishing AI agent dialog in Microsoft Foundry](images/agents-publish-2.png)
 
 Just like that, your agent is published.
 
-![Agent Published Successfully](images/agents-publish-success.png)
+![Successful AI agent publication confirmation in Microsoft Foundry](images/agents-publish-success.png)
 
 To make it available in Teams or Microsoft 365 Copilot, you must then prepare it for distribution.
 
 Fill in the required details and click **Prepare agent**.
 
-![Prepare your Agent for Teams and Microsoft 365 Copilot](images/agents-publish-teams-microsoft-365-copilot-prepare.png)
+![Prepare AI agent for Microsoft Teams and Microsoft 365 Copilot deployment](images/agents-publish-teams-microsoft-365-copilot-prepare.png)
 
 Next, choose the publishing scope and click **Submit**.
 
-![Submit your Agent for Teams and Microsoft 365 Copilot](images/agents-publish-teams-microsoft-365-copilot-submit.png)
+![Submit AI agent to Microsoft Teams and Microsoft 365 Copilot marketplace](images/agents-publish-teams-microsoft-365-copilot-submit.png)
 
 And just like that, your agent is now available in Microsoft 365 Copilot!
 
-![New Agent on Microsoft 365 Copilot](images/microsoft-365-copilot-agent.png)
+![AI agent successfully deployed in Microsoft 365 Copilot interface](images/microsoft-365-copilot-agent.png)
 
 ## Conclusion
 

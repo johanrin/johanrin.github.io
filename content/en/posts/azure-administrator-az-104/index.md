@@ -1,8 +1,10 @@
 ---
 title: How I Passed the AZ-104 Microsoft Azure Administrator Exam
 date: 2021-01-16
-cover: post-cover.png
-description: Learn how to pass the AZ-104 Microsoft Azure Administrator exam. Get tips, resources, and a proven study plan for success with CloudSkills and Whizlabs.
+image: post-cover.png
+description: Learn how to pass the AZ-104 Microsoft Azure Administrator exam. Get practical tips, study resources, and a proven preparation strategy for success.
+categories: ["Certifications", "Azure"]
+tags: ["Azure", "Certification", "AZ-104", "Study Guide"]
 ---
 
 After becoming Azure Solutions Architect Expert Certified in October, I challenged myself to pass the AZ-104 Microsoft Azure Administrator exam before the end of 2020!
@@ -77,7 +79,7 @@ For those who don't know, CloudSkills is a platform that provides Cloud & DevOps
 
 The course I used to complete my preparation was the [Azure Administrator (AZ-104) Exam Prep Course](https://cloudskills.io/courses/az-104).
 
-![CloudSkills Azure Administrator (AZ-104) Exam Prep Course](images/cloudskills-az104-exam-prep-course.jpg)
+![CloudSkills AZ-104 Azure Administrator exam preparation course with hands-on labs](images/cloudskills-az104-exam-prep-course.jpg)
 
 With the course, you also have access to Whizlabs practice tests and other contents, like the following for one year:
 

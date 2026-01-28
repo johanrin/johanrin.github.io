@@ -1,8 +1,10 @@
 ---
 title: How I Passed the AZ-300 Microsoft Azure Architect Technologies Exam
 date: 2020-10-05
-cover: post-cover.png
-description: Learn how to pass the AZ-300 Microsoft Azure Architect Technologies exam. Get expert tips, study resources, and a proven strategy for Azure certification success.
+image: post-cover.png
+description: Learn how to pass the AZ-300 Microsoft Azure Architect Technologies exam. Get practical tips, study resources, and a proven strategy for certification success.
+categories: ["Certifications", "Azure"]
+tags: ["Azure", "Certification", "AZ-300", "Study Guide"]
 ---
 
 After [passing the AZ-900 Microsoft Azure Fundamentals exam](https://www.freecodecamp.org/news/how-i-passed-the-az-900-microsoft-azure-fundamentals-exam/), I challenged myself to get Azure Solutions Architect Expert certified! I knew this would not be easy from the start, but it's [only my eighth challenge this year](https://www.freecodecamp.org/news/how-i-got-awscertified-and-got-a-job-during-the-pandemic/), and nothing could stop me!
@@ -17,13 +19,13 @@ Let's begin.
 
 In the Azure world, to get certified Solutions Architect Professional, you need to pass two exams: Microsoft Azure Architect Technologies and Microsoft Azure Architect Design.
 
-![Microsoft Certified Azure Solutions Architect Expert](images/microsoft-certified-azure-solutions-architect-expert.jpg)
+![Microsoft Certified Azure Solutions Architect Expert certification badge](images/microsoft-certified-azure-solutions-architect-expert.jpg)
 
 Microsoft Azure Architect Technologies exam was commonly called AZ-300 and Microsoft Azure Architect Design AZ-301.
 
 But since October 1, 2020, the exam names changed, and Microsoft incremented the numbers:
 
-![Azure Solutions Architect Expert exams](images/azure-solutions-architect-expert-exams.png)
+![Azure Solutions Architect Expert certification path showing AZ-303 and AZ-304 exams](images/azure-solutions-architect-expert-exams.png)
 
 As the skills outline changed a bit between the [AZ-300](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3VzwB) exam and [AZ-303](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4psD6), be sure to check the appropriate one for your exam.
 
@@ -101,7 +103,7 @@ You can start for free preparing the exam with Microsoft Learn, which is compose
 
 Microsoft Learn has the advantages of having short scenarios with exercises you can try without delay.
 
-![Microsoft Learn](images/microsoft-learn.jpg)
+![Microsoft Learn free Azure certification training platform with hands-on exercises](images/microsoft-learn.jpg)
 
 But to be honest, I didn't feel confident to take my exam after finishing all the learning paths. It was too theoretical for me, especially for an expert level exam. Because I had many doubts, I asked the Cloud community recommendations to finish my preparation, and many people recommended me CloudSkills. So I decided to give it a try!
 
@@ -113,7 +115,7 @@ CloudSkills provides Cloud & DevOps certification training using a practical, re
 
 The course I used to complete my preparation was the [Azure Solutions Architect (AZ-30x) Exam Prep Course](https://portal.cloudskills.io/az-30x).
 
-![CloudSkills](images/cloudskills.png)
+![CloudSkills Azure certification training platform with hands-on labs](images/cloudskills.png)
 
 The course cost $97, but you also have access to Whizlabs practice tests and the following content:
 
@@ -132,7 +134,7 @@ Careful, the preparation is intense, but you can take it at your own pace, and i
 
 For your hands-on labs, I recommend you to consolidate your knowledge with Thomas Maurer's study guides. He is a Senior Cloud Advocate at Microsoft and also former Microsoft MVP. He did a tremendous work summing up each Azure resources you need to pass your exam!
 
-![AZ-303 Study Guide Azure Architect Technologies](images/az-303-study-guide-resources.jpg)
+![AZ-303 Azure Architect Technologies exam study guide with learning resources](images/az-303-study-guide-resources.jpg)
 
 The cool thing is he did that for all the following exams:
 

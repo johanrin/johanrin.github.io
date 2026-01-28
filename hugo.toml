@@ -81,6 +81,7 @@ theme = "hugo-blog-awesome"
   # You can take a look at layouts/index.html for more information.
   description = "Architecting the future with AI & Cloud | Microsoft Foundry | Strategic insights from multiple cloud journeys"
   images = ['cover.png']
+  ogimage = "cover.png" # Default Open Graph image for social sharing
   mainSections = ['posts']
   toc = true # set to false to disable table of contents 'globally'
   tocOpen = false # set to true to open table of contents by default
@@ -115,6 +116,10 @@ theme = "hugo-blog-awesome"
 
 ###################################################################
 
+# Author name for JSON-LD structured data
+[params]
+  github = "Johan Rin"
+
 # Allow to override `browserconfig.xml` params (configuration for windows embedded browsers)
 [params.browserconfig]
   TileColor = "#2d89ef" # default windows 10 blue tile color
@@ -141,3 +146,6 @@ url = "/index.xml"
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+# Generate robots.txt using an embedded template
+enableRobotsTXT = true

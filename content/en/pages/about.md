@@ -1,5 +1,5 @@
 ---
-title: About
+title: About | AI & Cloud Architect
 description: Architect the future with AI and cloud. Explore Johan Rin's guides on Azure AI, Microsoft Foundry, cloud strategies, and generative AI workflows.
 toc: false
 ---

@@ -1,8 +1,10 @@
 ---
 title: What Exactly is Azure Resource Group?
 date: 2020-06-26
-cover: post-cover.png
+image: post-cover.png
 description: Learn what Azure Resource Groups are, why they matter, and how to create one. Includes a step-by-step guide to deploy your first VM using Azure CLI.
+categories: ["Tutorials", "Azure"]
+tags: ["Azure", "Resource Groups", "Azure CLI", "Infrastructure"]
 ---
 
 When I first used Azure to create a virtual machine, I was confused by Azure resource groups. I didn't understand why I needed it because it doesn't exist in AWS!
@@ -20,13 +22,13 @@ Before explaining what's a resource group, I have to explain what's a resource i
 A **resource** is simply an instance of a service that you create in Azure. It can be anything! For example, virtual machines, web apps, databases, function apps, etc.
 
 Here some popular Azure resources:
-![Popular Azure resources](images/popular-azure-resources.jpg)
+![Popular Azure cloud resources including VMs, databases, and web apps](images/popular-azure-resources.jpg)
 
 When you deploy a resource in Azure, it has to be included in a **resource group**.
 
 If you have an AWS background like me, it's something weird, and I wanted to understand why I needed it.
 
-![Why do I need a Resource group?](images/why-do-i-need-a-resource-group.jpg)
+![Understanding the purpose and benefits of Azure Resource Groups](images/why-do-i-need-a-resource-group.jpg)
 
 ## Resource group
 
@@ -38,13 +40,13 @@ Now, you may be wondering what's the benefits of this approach.
 
 Let's say you want to apply roles to all your productive resources. You don't need to apply them for each resource. You can directly add your roles to resource groups!
 
-![Apply roles to resource group](images/apply-roles-to-resource-group.png)
+![Applying Azure IAM roles to resource group for centralized access management](images/apply-roles-to-resource-group.png)
 
 Another benefit of resource groups is to force you to think about architecture. Every time you create a new resource, you have to think about which resource group you're gonna use. Because we tend to be uneasy with chaos, our brain gonna create order at some point.
 
 For sure, you can decide to put everything in the same resource group, but it's easy to move your resources from one resource group to another.
 
-![Move resources to another resource group](images/move-resources-to-another-resource-group.jpg)
+![Moving Azure resources between resource groups for better organization](images/move-resources-to-another-resource-group.jpg)
 
 Note: A resource group can contain resources located in different regions. For instance, you can have your virtual machine deployed in East US and your Azure Cosmos DB in West US.
 
@@ -60,7 +62,7 @@ Basically, when you send a request to Azure, you send a request to ARM!
 
 Resource Manager checks if you have the authorizations and forward the request to the Azure service, which takes the action: creating the virtual machine for instance.
 
-![Azure Resource Manager](images/azure-resource-manager.png)
+![Azure Resource Manager architecture diagram showing deployment workflow](images/azure-resource-manager.png)
 
 With this layer, we can do more powerful things like automating deployment with templates. In Azure, we call that: **ARM template**! It's a chapter in itself and I'll write about it in another post.
 
@@ -78,7 +80,7 @@ We're gonna use Azure Cloud Shell to run our commands.
 
 Azure Cloud Shell is an interactive, browser-accessible shell for managing Azure resources. We can use either Bash or PowerShell commands there.
 
-![Azure Cloud Shell](images/azure-cloud-shell.jpg)
+![Azure Cloud Shell browser-based terminal for running Azure CLI commands](images/azure-cloud-shell.jpg)
 
 ### Create a resource group and virtual network
 
