@@ -4,6 +4,23 @@
 <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
 <link rel="dns-prefetch" href="https://www.google-analytics.com" />
 
+{{/* Preload cover images for faster LCP */}}
+{{- $imageURL := "" -}}
+{{- if .Params.images -}}
+    {{- $img := index .Params.images 0 -}}
+    {{- if eq .Kind "page" -}}
+        {{/* For page bundles, image is relative to the page */}}
+        {{- $imageURL = printf "%s%s" .Permalink $img -}}
+    {{- else -}}
+        {{- $imageURL = $img | absURL -}}
+    {{- end -}}
+{{- else if .Site.Params.images -}}
+    {{- $imageURL = index .Site.Params.images 0 | absURL -}}
+{{- end -}}
+{{- if $imageURL -}}
+<link rel="preload" as="image" href="{{ $imageURL }}" />
+{{- end -}}
+
 {{/* Prevent 404 pages from being indexed */}}
 {{ if eq .Kind "404" }}
 <meta name="robots" content="noindex, nofollow" />
