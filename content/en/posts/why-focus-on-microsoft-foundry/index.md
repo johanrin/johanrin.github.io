@@ -1,11 +1,11 @@
 ---
 title: Why I'm Focusing on Microsoft Foundry in 2026
 date: 2026-01-05
-image: post-cover.png
+images: ['post-cover.png']
 description: Discover why Microsoft Foundry is my priority in 2026. Personal insights on AI innovation and why I'm betting on this platform for the future.
 toc: false
-categories: ["Opinion", "AI"]
-tags: ["Microsoft Foundry", "AI", "Career", "Strategy"]
+categories: ['Opinion', 'AI']
+tags: ['Microsoft Foundry', 'AI', 'Career', 'Strategy']
 ---
 
 ## The Changing Technology Landscape

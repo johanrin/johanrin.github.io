@@ -1,10 +1,10 @@
 ---
-title: "Getting Started with Microsoft Foundry"
+title: Getting Started with Microsoft Foundry
 date: 2026-01-18
-image: post-cover.png
-description: "Learn what Microsoft Foundry is and how to deploy your first AI agent step‑by‑step. A beginner‑friendly guide to models, tools, and the agent lifecycle on Azure."
-categories: ["Tutorials", "AI"]
-tags: ["Microsoft Foundry", "Azure", "AI", "PaaS", "Getting Started"]
+images: ['post-cover.png']
+description: Learn what Microsoft Foundry is and how to deploy your first AI agent step‑by‑step. A beginner‑friendly guide to models, tools, and the agent lifecycle on Azure.
+categories: ['Tutorials', 'AI']
+tags: ['Microsoft Foundry', 'Azure', 'AI', 'PaaS', 'Getting Started']
 ---
 
 At the beginning of this year, I announced that I wanted to focus on Microsoft Foundry.

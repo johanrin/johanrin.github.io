@@ -1,10 +1,10 @@
 ---
 title: How I Passed the AZ-104 Microsoft Azure Administrator Exam
 date: 2021-01-16
-image: post-cover.png
+images: ['post-cover.png']
 description: Learn how to pass the AZ-104 Microsoft Azure Administrator exam. Get practical tips, study resources, and a proven preparation strategy for success.
-categories: ["Certifications", "Azure"]
-tags: ["Azure", "Certification", "AZ-104", "Study Guide"]
+categories: ['Certifications', 'Azure']
+tags: ['Azure', 'Certification', 'AZ-104', 'Study Guide']
 ---
 
 After becoming Azure Solutions Architect Expert Certified in October, I challenged myself to pass the AZ-104 Microsoft Azure Administrator exam before the end of 2020!

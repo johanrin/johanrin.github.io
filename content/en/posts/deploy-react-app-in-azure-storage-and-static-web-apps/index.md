@@ -1,10 +1,10 @@
 ---
 title: How to Deploy Your React App in Azure Storage and Static Web Apps
 date: 2021-01-24
-image: post-cover.png
+images: ['post-cover.png']
 description: Deploy your React app on Azure easily! Learn manual hosting with Azure Storage and automated CI/CD using Azure Static Web Apps and GitHub Actions.
-categories: ["Tutorials", "Azure"]
-tags: ["Azure", "React", "Static Web Apps", "Azure Storage", "Deployment"]
+categories: ['Tutorials', 'Azure']
+tags: ['Azure', 'React', 'Static Web Apps', 'Azure Storage', 'Deployment']
 ---
 
 Imagine you just finished your dream app in React and search for a way to host it somewhere on the Internet.

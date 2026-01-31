@@ -1,10 +1,10 @@
 ---
 title: Call Your AWS Step Functions With API Gateway in Just a Few Lines With SAM
 date: 2021-05-03
-image: post-cover.png
+images: ['post-cover.png']
 description: Learn how to integrate AWS Step Functions with API Gateway using SAM in just a few lines. Quick guide to deploy serverless workflows with minimal code.
-categories: ["Tutorials", "AWS"]
-tags: ["AWS", "Step Functions", "API Gateway", "SAM", "Serverless"]
+categories: ['Tutorials', 'AWS']
+tags: ['AWS', 'Step Functions', 'API Gateway', 'SAM', 'Serverless']
 ---
 
 Last weekend I played with AWS Step Functions! I wanted to refactor a Lambda function I already coded for the sake of maintainability and evolutivity.

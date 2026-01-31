@@ -1,10 +1,10 @@
 ---
-title: "How to Build Your First AI Agent in Microsoft Foundry"
+title: How to Build Your First AI Agent in Microsoft Foundry
 date: 2026-01-25
-image: post-cover.png
-description: "Learn how to build, configure, and publish your first AI agent using Microsoft Foundry. Hands-on tutorial with step-by-step instructions."
-categories: ["Tutorials", "AI"]
-tags: ["AI", "Microsoft Foundry", "Azure", "AI Agents", "Tutorial"]
+images: ['post-cover.png']
+description: Learn how to build, configure, and publish your first AI agent using Microsoft Foundry. Hands-on tutorial with step-by-step instructions.
+categories: ['Tutorials', 'AI']
+tags: ['AI', 'Microsoft Foundry', 'Azure', 'AI Agents', 'Tutorial']
 ---
 
 Last time, we explored [what Microsoft Foundry is](https://johanrin.com/posts/getting-started-with-microsoft-foundry/) and why it matters.

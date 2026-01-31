@@ -1,10 +1,10 @@
 ---
 title: How I Passed the AZ-300 Microsoft Azure Architect Technologies Exam
 date: 2020-10-05
-image: post-cover.png
+images: ['post-cover.png']
 description: Learn how to pass the AZ-300 Microsoft Azure Architect Technologies exam. Get practical tips, study resources, and a proven strategy for certification success.
-categories: ["Certifications", "Azure"]
-tags: ["Azure", "Certification", "AZ-300", "Study Guide"]
+categories: ['Certifications', 'Azure']
+tags: ['Azure', 'Certification', 'AZ-300', 'Study Guide']
 ---
 
 After [passing the AZ-900 Microsoft Azure Fundamentals exam](https://www.freecodecamp.org/news/how-i-passed-the-az-900-microsoft-azure-fundamentals-exam/), I challenged myself to get Azure Solutions Architect Expert certified! I knew this would not be easy from the start, but it's [only my eighth challenge this year](https://www.freecodecamp.org/news/how-i-got-awscertified-and-got-a-job-during-the-pandemic/), and nothing could stop me!

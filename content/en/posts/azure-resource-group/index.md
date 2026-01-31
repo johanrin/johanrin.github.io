@@ -1,10 +1,10 @@
 ---
 title: What Exactly is Azure Resource Group?
 date: 2020-06-26
-image: post-cover.png
+images: ['post-cover.png']
 description: Learn what Azure Resource Groups are, why they matter, and how to create one. Includes a step-by-step guide to deploy your first VM using Azure CLI.
-categories: ["Tutorials", "Azure"]
-tags: ["Azure", "Resource Groups", "Azure CLI", "Infrastructure"]
+categories: ['Tutorials', 'Azure']
+tags: ['Azure', 'Resource Groups', 'Azure CLI', 'Infrastructure']
 ---
 
 When I first used Azure to create a virtual machine, I was confused by Azure resource groups. I didn't understand why I needed it because it doesn't exist in AWS!
