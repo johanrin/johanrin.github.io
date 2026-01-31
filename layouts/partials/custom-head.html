@@ -1,10 +1,27 @@
 {{/* Enhanced Open Graph and Twitter Card Meta Tags */}}
 
+{{/* DNS prefetch for external services */}}
+<link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+<link rel="dns-prefetch" href="https://www.google-analytics.com" />
+
+{{/* Prevent 404 pages from being indexed */}}
+{{ if eq .Kind "404" }}
+<meta name="robots" content="noindex, nofollow" />
+{{ end }}
+
 {{/* Canonical URL */}}
 <link rel="canonical" href="{{ .Permalink }}" />
 
 {{/* Open Graph URL - for all pages */}}
 <meta property="og:url" content="{{ .Permalink }}" />
+
+{{/* Open Graph Image dimensions for better social previews */}}
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+{{/* Twitter image alt text for accessibility */}}
+{{- $description := .Description | default .Site.Params.description -}}
+<meta name="twitter:image:alt" content="{{ $description }}" />
 
 {{/* Open Graph Type - set to "article" for posts, "website" for all other pages */}}
 {{ if eq .Section "posts" }}
