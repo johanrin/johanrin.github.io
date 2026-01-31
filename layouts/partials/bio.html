@@ -17,7 +17,9 @@
         srcset="{{ $image2x.RelPermalink }} 2x, {{ $image3x.RelPermalink }} 3x"
         alt="{{ $avatar_img_alt }}"
         width="{{ $image1x.Width }}"
-        height="{{ $image1x.Height }}" />
+        height="{{ $image1x.Height }}"
+        fetchpriority="high"
+        decoding="async" />
     {{ end }}
     {{ end }}
     <h2 class="author-name">{{ .Site.Params.author.intro }}</h2>
