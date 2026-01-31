@@ -9,6 +9,30 @@
 <meta name="robots" content="noindex, nofollow" />
 {{ end }}
 
+{{/* Person schema for homepage - helps search engines understand the author */}}
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "{{ .Site.Params.author.name }}",
+    "url": "{{ .Site.BaseURL }}",
+    "image": "{{ .Site.BaseURL }}avatar.jpg",
+    "description": "{{ .Site.Params.author.description }}",
+    "sameAs": [
+        {{- $first := true -}}
+        {{- range .Site.Params.socialIcons -}}
+            {{- if ne .name "Rss" -}}
+                {{- if not $first }},{{ end -}}
+                "{{ .url }}"
+                {{- $first = false -}}
+            {{- end -}}
+        {{- end -}}
+    ]
+}
+</script>
+{{ end }}
+
 {{/* Canonical URL */}}
 <link rel="canonical" href="{{ .Permalink }}" />
 
