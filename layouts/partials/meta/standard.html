@@ -1,0 +1,64 @@
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">{{ .Title }} | {{ .Site.Title }}</title>
+<meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
+<meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
+<meta itemprop="name" content="{{ .Title }} | {{ .Site.Title }}" />
+<meta name="application-name" content="{{ .Title }} | {{ .Site.Title }}" />
+<meta property="og:site_name" content="{{ .Site.Params.sitename }}" />
+
+{{/*  Define empty variable description  */}}
+{{- $description := "" -}}
+
+{{/*  If description is defined in front matter, use it  */}}
+{{- if .Params.description -}}
+  {{- $description = trim .Params.description "\n" -}}
+{{/*  If description is not defined in front matter, use site description  */}}
+{{- else if .Site.Params.description -}}
+  {{- $description = trim .Site.Params.description "\n" -}}
+{{- end -}}
+
+<meta name="description" content="{{ $description }}">
+<meta itemprop="description" content="{{ $description }}" />
+<meta property="og:description" content="{{ $description }}" />
+<meta name="twitter:description" content="{{ $description }}" />
+
+<meta property="og:locale" content="{{ .Site.LanguageCode }}" />
+<meta name="language" content="{{ .Site.LanguageCode }}" />
+{{ range .AllTranslations }}
+  <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}" />
+{{ end }}
+
+{{/*  Build image URL - handle page bundles correctly  */}}
+{{- $imageURL := "" -}}
+
+{{/*  Check for images array (plural) first, then image (singular)  */}}
+{{- if .Params.images -}}
+  {{- $img := index .Params.images 0 -}}
+  {{- if eq .Kind "page" -}}
+    {{/*  For page bundles, image is relative to the page  */}}
+    {{- $imageURL = printf "%s%s" .Permalink $img -}}
+  {{- else -}}
+    {{- $imageURL = $img | absURL -}}
+  {{- end -}}
+{{- else if .Params.image -}}
+  {{- if eq .Kind "page" -}}
+    {{- $imageURL = printf "%s%s" .Permalink .Params.image -}}
+  {{- else -}}
+    {{- $imageURL = .Params.image | absURL -}}
+  {{- end -}}
+{{/*  Fallback to site-level images  */}}
+{{- else if .Site.Params.images -}}
+  {{- $imageURL = index .Site.Params.images 0 | absURL -}}
+{{- else if .Site.Params.ogimage -}}
+  {{- $imageURL = .Site.Params.ogimage | absURL -}}
+{{- end -}}
+
+{{- if $imageURL -}}
+<meta itemprop="image" content="{{ $imageURL }}" />
+<meta property="og:image" content="{{ $imageURL }}" />
+<meta name="twitter:image" content="{{ $imageURL }}" />
+<meta name="twitter:image:src" content="{{ $imageURL }}" />
+{{- end -}}
