@@ -72,7 +72,7 @@ Let's correct that!
 - Python 3.12+
 - [uv](https://docs.astral.sh/uv/) (recommended) or pip
 - [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli) installed and logged in
-- A Dockerfile (included in the [GitHub repository](https://github.com/johanrin/my-first-mcp-server))
+- [Docker](https://docs.docker.com/get-docker/)
 
 ### Write the code
 
@@ -166,7 +166,9 @@ if __name__ == "__main__":
 
 ### Deploy on Azure
 
-To make our MCP server publicly accessible, we'll deploy it to Azure Container Apps.
+To make our MCP server publicly accessible, we'll deploy it to Azure Container Apps using the Azure CLI.
+
+Open your terminal and run the following commands.
 
 First, define the variables:
 
