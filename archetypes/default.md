@@ -1,8 +1,9 @@
 ---
 title:
-date: { { .Date } }
+date: {{ .Date }}
 draft: true
 description:
 images: ['post-cover.png']
-isStarred: false
+categories: ['']
+tags: ['']
 ---
