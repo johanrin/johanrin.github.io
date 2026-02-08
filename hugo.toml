@@ -9,7 +9,6 @@ enableEmoji = true
 
 # Use git commit dates for .Lastmod (improves sitemap and structured data)
 enableGitInfo = true
-ignoreErrors = ["additional-script-loading-error"]
 
 # traditional way: theme component resides in directory 'themes'
 theme = "hugo-blog-awesome"
@@ -139,5 +138,9 @@ url = "/index.xml"
   changefreq = "weekly"
   priority = 0.5
 
-# Generate robots.txt using an embedded template
+# Generate robots.txt using custom template in layouts/robots.txt
 enableRobotsTXT = true
+
+# Include robots.txt in homepage outputs (theme only sets html + rss)
+[outputs]
+  home = ['html', 'rss', 'robots']

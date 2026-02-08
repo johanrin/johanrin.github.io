@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is a Hugo static blog site deployed to GitHub Pages. The site focuses on AI, cloud architecture, and Microsoft Foundry content.
 
-**Tech Stack:** Hugo (v0.153.2) with hugo-blog-awesome theme (Git submodule)
+**Tech Stack:** Hugo (v0.154.5) with hugo-blog-awesome theme (Git submodule)
 
 ## Common Commands
 

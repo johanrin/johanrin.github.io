@@ -134,4 +134,4 @@ In this post, you've learned about resource groups, the dependencies with resour
 
 It was something very confusing for me at first. But now, that's okay 👍
 
-That's it for me, hope you learned something! If you have any questions, [find me on Twitter](https://twitter.com/johanrin) and feel free to ask me anything 🙏
+That's it for me, hope you learned something! If you have any questions, [find me on X](https://x.com/johanrin) and feel free to ask me anything 🙏

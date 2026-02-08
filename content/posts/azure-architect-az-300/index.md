@@ -157,4 +157,4 @@ It was exhausting, and I'm very proud of this one. But if I had to do it again, 
 
 That's okay! I'm not finished yet: my goal is to earn the Azure Solutions Architect Expert certification. So, I still need to pass the AZ-304 Microsoft Azure Architect Design exam. And if you follow me on Twitter, you can be sure that I'll share my progress until I get it!
 
-That's it for me, hope you learned something! If you have any questions, [find me on Twitter](https://twitter.com/johanrin) and feel free to ask me anything 🙏
+That's it for me, hope you learned something! If you have any questions, [find me on X](https://x.com/johanrin) and feel free to ask me anything 🙏

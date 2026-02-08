@@ -241,4 +241,4 @@ Oh, and you can find the GitHub repositories I used here:
 - [https://github.com/johanrin/react-app-on-azure](https://github.com/johanrin/react-app-on-azure)
 - [https://github.com/johanrin/react-app-on-azure-2](https://github.com/johanrin/react-app-on-azure-2)
 
-That's it for me, hope you learned something! If you have any questions, [find me on Twitter](https://twitter.com/johanrin) and feel free to ask me anything 🙏
+That's it for me, hope you learned something! If you have any questions, [find me on X](https://x.com/johanrin) and feel free to ask me anything 🙏

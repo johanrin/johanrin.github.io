@@ -65,7 +65,7 @@ As you can imagine, this is an in-depth exam which will test you on technical sk
 
 ## How much does the exam cost?
 
-The exam costs $165, but you can schedule it for free with a voucher. Be sure to follow me on [Twitter](https://twitter.com/johanrin) — I tweet every time I find opportunities to get free vouchers.
+The exam costs $165, but you can schedule it for free with a voucher. Be sure to follow me on [X](https://x.com/johanrin) — I post every time I find opportunities to get free vouchers.
 
 {{< x user="johanrin" id="1320278269242101764" >}}
 
@@ -100,4 +100,4 @@ If I had one recommendation, prepare for the AZ-900, AZ-104, and then AZ-303 & A
 
 Don't try to jump from AZ-900 to AZ-30x! It's painful, trust me... 😅
 
-That's it for me, hope you learned something! If you have any questions, [find me on Twitter](https://twitter.com/johanrin) and feel free to ask me anything 🙏
+That's it for me, hope you learned something! If you have any questions, [find me on X](https://x.com/johanrin) and feel free to ask me anything 🙏

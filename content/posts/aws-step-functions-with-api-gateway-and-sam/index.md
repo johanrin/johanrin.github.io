@@ -224,4 +224,4 @@ It took us only a few lines of YAML to combine these services. Very convenient!
 You can find the GitHub repository with the complete code here:
 [https://github.com/johanrin/sam-step-functions-api-tutorial](https://github.com/johanrin/sam-step-functions-api-tutorial)
 
-That's it for me, hope you learned something! If you have any questions, [find me on Twitter](https://twitter.com/johanrin) and feel free to ask me anything 🙏
+That's it for me, hope you learned something! If you have any questions, [find me on X](https://x.com/johanrin) and feel free to ask me anything 🙏
