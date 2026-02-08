@@ -44,12 +44,15 @@
         "headline": {{ .Title }},
         "author": {
         "@type": "Person",
-        "name": "{{ .Site.Params.github }}"
+        "name": "{{ .Site.Params.author.name }}"
         },
         "datePublished": "{{ dateFormat "2006-01-02" .Date }}",
         "description": {{ .Description }},
         "wordCount": {{ .WordCount }},
-        "mainEntityOfPage": "True",
+        "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ .Permalink }}"
+        },
         "dateModified": "{{ dateFormat "2006-01-02" .Lastmod }}",
         "image": {
         "@type": "ImageObject",
@@ -59,7 +62,11 @@
         },
         "publisher": {
         "@type": "Organization",
-        "name": "{{ .Site.Title }}"
+        "name": "{{ .Site.Title }}",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "{{ .Site.BaseURL }}avatar.jpg"
+        }
         }
     }
     </script>
