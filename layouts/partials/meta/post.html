@@ -53,7 +53,7 @@
         "dateModified": "{{ dateFormat "2006-01-02" .Lastmod }}",
         "image": {
         "@type": "ImageObject",
-        "url": "{{ with .Params.images }}{{ index . 0 | absURL }}{{ end }}",
+        "url": "{{ with .Params.images }}{{ $img := index . 0 }}{{ if eq $.Kind "page" }}{{ printf "%s%s" $.Permalink $img }}{{ else }}{{ $img | absURL }}{{ end }}{{ end }}",
         "width": 1200,
         "height": 630
         },
