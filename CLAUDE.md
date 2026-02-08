@@ -24,7 +24,7 @@ hugo new posts/my-post/index.md     # Creates post from archetypes/default.md te
 ## Architecture
 
 ```
-content/en/
+content/
 ├── posts/          # Blog posts (each post is a directory with index.md + images)
 ├── pages/          # Static pages (about.md)
 └── _index.md       # Homepage
@@ -42,7 +42,7 @@ themes/hugo-blog-awesome/   # Theme submodule (do not edit directly)
 
 Blog posts use directory-based organization:
 ```
-content/en/posts/my-post/
+content/posts/my-post/
 ├── index.md        # Post content with YAML front matter
 ├── cover.png       # Featured image
 └── *.png           # Additional images
