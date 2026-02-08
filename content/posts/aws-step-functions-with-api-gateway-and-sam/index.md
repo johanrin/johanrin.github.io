@@ -9,7 +9,7 @@ tags: ['AWS', 'Step Functions', 'API Gateway', 'SAM', 'Serverless']
 
 Last weekend I played with AWS Step Functions! I wanted to refactor a Lambda function I already coded for the sake of maintainability and evolutivity.
 
-{{< tweet user="johanrin" id="1386327733408514052" >}}
+{{< x user="johanrin" id="1386327733408514052" >}}
 
 After having some fun with AWS Serverless Application Model (AWS SAM) refactoring and deploying my workflow on AWS, I wanted to call it from outside AWS with a simple endpoint.
 

@@ -9,7 +9,7 @@ tags: ['Azure', 'Certification', 'AZ-104', 'Study Guide']
 
 After becoming Azure Solutions Architect Expert Certified in October, I challenged myself to pass the AZ-104 Microsoft Azure Administrator exam before the end of 2020!
 
-{{< tweet user="johanrin" id="1320411647811457029" >}}
+{{< x user="johanrin" id="1320411647811457029" >}}
 
 I didn't start my preparation right away. At first, I spent 20 days sharpening my PowerShell skills to understand my course, which included many PowerShell commands.
 
@@ -67,7 +67,7 @@ As you can imagine, this is an in-depth exam which will test you on technical sk
 
 The exam costs $165, but you can schedule it for free with a voucher. Be sure to follow me on [Twitter](https://twitter.com/johanrin) — I tweet every time I find opportunities to get free vouchers.
 
-{{< tweet user="johanrin" id="1320278269242101764" >}}
+{{< x user="johanrin" id="1320278269242101764" >}}
 
 To schedule your AZ-104 exam, go to the Microsoft certification page here: [https://docs.microsoft.com/en-us/learn/certifications/exams/az-104](https://docs.microsoft.com/en-us/learn/certifications/exams/az-104).
 
@@ -92,7 +92,7 @@ With the course, you also have access to Whizlabs practice tests and other conte
 
 The combination of CloudSkills and Whizlabs practice tests was enough for me to pass the AZ-104 exam!
 
-{{< tweet user="johanrin" id="1343225728498884612" >}}
+{{< x user="johanrin" id="1343225728498884612" >}}
 
 Compared to the AZ-30x exams, this exam wasn't difficult, but my preparation was chaotic as the end of the year approached. Fortunately, I managed to pass this exam one day before my birthday 🎉
 

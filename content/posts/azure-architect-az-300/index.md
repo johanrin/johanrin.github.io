@@ -9,7 +9,7 @@ tags: ['Azure', 'Certification', 'AZ-300', 'Study Guide']
 
 After [passing the AZ-900 Microsoft Azure Fundamentals exam](https://www.freecodecamp.org/news/how-i-passed-the-az-900-microsoft-azure-fundamentals-exam/), I challenged myself to get Azure Solutions Architect Expert certified! I knew this would not be easy from the start, but it's [only my eighth challenge this year](https://www.freecodecamp.org/news/how-i-got-awscertified-and-got-a-job-during-the-pandemic/), and nothing could stop me!
 
-{{< tweet user="johanrin" id="1269876255140253697" >}}
+{{< x user="johanrin" id="1269876255140253697" >}}
 
 In this post, I will explain how I prepared for the AZ-300 Microsoft Azure Architect Technologies exam.
 
@@ -81,7 +81,7 @@ As you can see, it's an in-depth exam, so don't expect passing without solid kno
 
 The exam isn't cheap. It will cost you $165, but if you're joining a Microsoft Challenge, it's possible to get a free Microsoft Certification exam!
 
-{{< tweet user="johanrin" id="1308393400564154376" >}}
+{{< x user="johanrin" id="1308393400564154376" >}}
 
 To schedule your AZ-303 online exam with Pearson VUE, you can go to the certification page: [https://docs.microsoft.com/en-us/learn/certifications/exams/az-303](https://docs.microsoft.com/en-us/learn/certifications/exams/az-303).
 
@@ -107,7 +107,7 @@ Microsoft Learn has the advantages of having short scenarios with exercises you 
 
 But to be honest, I didn't feel confident to take my exam after finishing all the learning paths. It was too theoretical for me, especially for an expert level exam. Because I had many doubts, I asked the Cloud community recommendations to finish my preparation, and many people recommended me CloudSkills. So I decided to give it a try!
 
-{{< tweet user="johanrin" id="1295802835012145154" >}}
+{{< x user="johanrin" id="1295802835012145154" >}}
 
 ### CloudSkills
 
@@ -149,7 +149,7 @@ The cool thing is he did that for all the following exams:
 
 The combination of CloudSkills, Thomas Maurer's study guide, and Whizlabs practice tests were enough for me to pass the AZ-300 exam!
 
-{{< tweet user="johanrin" id="1310597693631324160" >}}
+{{< x user="johanrin" id="1310597693631324160" >}}
 
 It's probably the most challenging exam I have prepared so far. I worked on it every single day from June to September at least one hour per day. The funny thing is back in June, I was still new to Azure, and it took me 150 days to pass the exam.
 
