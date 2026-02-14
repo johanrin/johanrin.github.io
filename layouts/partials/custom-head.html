@@ -95,20 +95,114 @@
 {{ end }}
 
 <style>
-@media screen and (min-width: 769px) {
-    /* .post-content is a class which will be present only on single pages
-        and not lists and section pages in Hugo */
-    .page-content input[type="checkbox"]:checked ~ label > img {
-        transform: scale(1.6);
-        cursor: zoom-out;
-        position: relative;
-        z-index: 999;
-    }
+img.zoomable {
+    cursor: zoom-in;
+}
 
-    .page-content img.zoomCheck {
-        transition: transform 0.15s ease;
-        z-index: 999;
-        cursor: zoom-in;
-    }
+.zoom-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9998;
+    background: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    transition: opacity 0.3s cubic-bezier(0.2, 0, 0.2, 1);
+    cursor: zoom-out;
+}
+
+.zoom-overlay.active {
+    opacity: 1;
+}
+
+.zoom-clone {
+    position: fixed;
+    z-index: 9999;
+    cursor: zoom-out;
+    will-change: transform;
+    transition: transform 0.3s cubic-bezier(0.2, 0, 0.2, 1);
 }
 </style>
+<script>
+(function () {
+    var overlay, clone, sourceImg, scrollStart, animating;
+
+    function open(img) {
+        if (animating || overlay) return;
+        animating = true;
+        sourceImg = img;
+        scrollStart = window.scrollY;
+
+        // Hide original to avoid doubling
+        sourceImg.style.visibility = 'hidden';
+
+        // Create overlay backdrop
+        overlay = document.createElement('div');
+        overlay.className = 'zoom-overlay';
+        document.body.appendChild(overlay);
+
+        // Create clone at exact position of original
+        var rect = img.getBoundingClientRect();
+        clone = document.createElement('img');
+        clone.src = img.src;
+        clone.alt = img.alt;
+        clone.className = 'zoom-clone';
+        clone.style.top = rect.top + 'px';
+        clone.style.left = rect.left + 'px';
+        clone.style.width = rect.width + 'px';
+        clone.style.height = rect.height + 'px';
+        document.body.appendChild(clone);
+
+        // Force reflow, then animate
+        clone.offsetHeight;
+        overlay.classList.add('active');
+
+        // Calculate transform to center and scale
+        var scale = Math.min(
+            (window.innerWidth * 0.95) / rect.width,
+            (window.innerHeight * 0.95) / rect.height
+        );
+        var translateX = (window.innerWidth / 2) - (rect.left + rect.width / 2);
+        var translateY = (window.innerHeight / 2) - (rect.top + rect.height / 2);
+
+        clone.style.transform = 'translate(' + translateX + 'px, ' + translateY + 'px) scale(' + scale + ')';
+
+        clone.addEventListener('transitionend', function () {
+            animating = false;
+        }, { once: true });
+    }
+
+    function close() {
+        if (animating || !overlay) return;
+        animating = true;
+
+        overlay.classList.remove('active');
+
+        // Animate clone back to original position (accounting for scroll change)
+        var scrollDelta = window.scrollY - scrollStart;
+        clone.style.transform = 'translate(0, ' + (-scrollDelta) + 'px) scale(1)';
+
+        clone.addEventListener('transitionend', function () {
+            overlay.remove();
+            clone.remove();
+            sourceImg.style.visibility = '';
+            overlay = clone = sourceImg = null;
+            animating = false;
+        }, { once: true });
+    }
+
+    document.addEventListener('click', function (e) {
+        if (overlay) { close(); return; }
+        var img = e.target.closest('img.zoomable');
+        if (img) open(img);
+    });
+
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') close();
+    });
+
+    // Scroll to dismiss
+    window.addEventListener('scroll', function () {
+        if (!overlay || animating) return;
+        if (Math.abs(window.scrollY - scrollStart) > 50) close();
+    }, { passive: true });
+})();
+</script>
