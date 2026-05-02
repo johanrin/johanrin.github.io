@@ -28,13 +28,14 @@
 
 {{/* Person schema for homepage - helps search engines understand the author */}}
 {{ if .IsHome }}
+{{ $avatar := resources.Get .Site.Params.author.avatar }}
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "{{ .Site.Params.author.name }}",
-    "url": "{{ .Site.BaseURL }}",
-    "image": "{{ .Site.BaseURL }}avatar.jpg",
+    "url": "{{ .Site.BaseURL }}",{{ with $avatar }}
+    "image": "{{ .Permalink }}",{{ end }}
     "description": "{{ .Site.Params.author.description }}",
     "sameAs": [
         {{- $first := true -}}
